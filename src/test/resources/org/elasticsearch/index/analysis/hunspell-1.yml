@@ -1,0 +1,111 @@
+index:
+  analysis:
+    filter:
+      hunspell_bg:
+        type: hunspell
+        locale: bg_BG
+      hunspell_da:
+        type: hunspell
+        locale: da_DK
+      hunspell_el:
+        type: hunspell
+        locale: el_GR
+      hunspell_en_gb:
+        type: hunspell
+        locale: en_GB
+      hunspell_en_us:
+        type: hunspell
+        locale: en_US
+      hunspell_fr:
+        type: hunspell
+        locale: fr_FR
+      hunspell_hr:
+        type: hunspell
+        locale: hr_HR
+      hunspell_it:
+        type: hunspell
+        locale: it_IT
+      hunspell_nb:
+        type: hunspell
+        locale: nb_NO
+      hunspell_pt_br:
+        type: hunspell
+        locale: pt_BR
+      hunspell_ru:
+        type: hunspell
+        locale: ru_RU
+      hunspell_sl:
+        type: hunspell
+        locale: sl_SI
+      hunspell_uk:
+        type: hunspell
+        locale: uk_UA
+      hunspell_ca:
+        type: hunspell
+        locale: ca_ES
+      hunspell_de:
+        type: hunspell
+        locale: de_DE
+      hunspell_en_au:
+        type: hunspell
+        locale: en_AU
+      hunspell_he:
+        type: hunspell
+        locale: he_IL
+      hunspell_hu:
+        type: hunspell
+        locale: hu_HU
+      hunspell_lt:
+        type: hunspell
+        locale: lt_LT
+      hunspell_nl:
+        type: hunspell
+        locale: nl_NL
+      hunspell_pt:
+        type: hunspell
+        locale: pt_PT
+      hunspell_sh:
+        type: hunspell
+        locale: sh
+      hunspell_sr:
+        type: hunspell
+        locale: sr
+      hunspell_vi:
+        type: hunspell
+        locale: vi_VI
+      hunspell_cs:
+        type: hunspell
+        locale: cs_CZ
+      hunspell_de_neu:
+        type: hunspell
+        locale: de_DE_neu
+      hunspell_en_ca:
+        type: hunspell
+        locale: en_CA
+      hunspell_es:
+        type: hunspell
+        locale: es_ES
+      hunspell_hi:
+        type: hunspell
+        locale: hi_IN
+      hunspell_id:
+        type: hunspell
+        locale: id_ID
+      hunspell_lv:
+        type: hunspell
+        locale: lv_LV
+      hunspell_pl:
+        type: hunspell
+        locale: pl_PL
+      hunspell_ro:
+        type: hunspell
+        locale: ro_RO
+      hunspell_sk:
+        type: hunspell
+        locale: sk_SK
+      hunspell_sv:
+        type: hunspell
+        locale: sv_SE
+      hunspell_vi_vn:
+        type: hunspell
+        locale: vi_VN
