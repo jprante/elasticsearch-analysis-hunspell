@@ -17,13 +17,13 @@ In order to install the plugin, simply run: `bin/plugin -install jprante/elastic
 
 Example usage:
 
-index:
-  analysis:
-    filter:
-      hunspell_de:
-        type: hunspell
-        locale: de_DE
-        ignoreCase: true
+	index:
+	  analysis:
+	    filter:
+	      hunspell_de:
+	        type: hunspell
+	        locale: de_DE
+	        ignoreCase: true
 
 
 Supported locales:
