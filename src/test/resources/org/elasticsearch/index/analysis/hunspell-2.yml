@@ -1,0 +1,12 @@
+index:
+  analysis:
+    analyzer:
+      test:
+        type: custom
+        tokenizer: standard
+        filter: [standard, lowercase, hunspell_lt]
+    filter:
+      hunspell_lt:
+        type: hunspell
+        locale: lt_LT
+        ignoreCase: true
