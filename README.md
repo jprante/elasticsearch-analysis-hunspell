@@ -3,16 +3,17 @@ Hunspell Analysis for ElasticSearch
 
 The Hunspell Analysis plugin integrates Lucene Hunspell module into ElasticSearch, adding Hunspell relates analysis components.
 
-In order to install the plugin, simply run: `bin/plugin -install jprante/elasticsearch-analysis-hunspell/1.0.0`. 
+In order to install the plugin, simply run: `bin/plugin -install jprante/elasticsearch-analysis-hunspell`. 
 
     ---------------------------------------------
     | Hunspell Analysis Plugin | ElasticSearch  |
     ---------------------------------------------
-    | master                   | 0.18 -> master |
+    | master                   | 0.18           |
     ---------------------------------------------
-    | 1.0.0                    | 0.18 -> master |
+    | 1.1.0                    | 0.18.7         |
     ---------------------------------------------
-
+    | 1.0.0                    | < 0.18.7       |
+    ---------------------------------------------
 
 
 Example usage:

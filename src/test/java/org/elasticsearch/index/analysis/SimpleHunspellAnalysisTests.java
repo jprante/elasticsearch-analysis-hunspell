@@ -41,10 +41,19 @@ public class SimpleHunspellAnalysisTests {
     @Test
     public void testSimpleConfigurationYaml() {
         Settings settings = settingsBuilder().loadFromClasspath("org/elasticsearch/index/analysis/hunspell-1.yml").build();
-        testSimpleConfiguration(settings);
+        AnalysisService analysisService = testSimpleConfiguration(settings);
+        TokenFilterFactory filterFactory = analysisService.tokenFilter("hunspell");
+        MatcherAssert.assertThat(filterFactory, instanceOf(HunspellStemFilterFactory.class));
     }
 
-    private void testSimpleConfiguration(Settings settings) {
+    @Test
+    public void testTicket1() {
+        Settings settings = settingsBuilder().loadFromClasspath("org/elasticsearch/index/analysis/hunspell-2.yml").build();
+        AnalysisService analysisService = testSimpleConfiguration(settings);
+        NamedAnalyzer analyzer = analysisService.analyzer("test");        
+    }
+
+    private AnalysisService testSimpleConfiguration(Settings settings) {
         Index index = new Index("test");
 
         Injector parentInjector = new ModulesBuilder().add(new SettingsModule(settings),
@@ -55,9 +64,8 @@ public class SimpleHunspellAnalysisTests {
                 new IndexNameModule(index),
                 new AnalysisModule(settings, parentInjector.getInstance(IndicesAnalysisService.class)).addProcessor(new HunspellAnalysisBinderProcessor())).createChildInjector(parentInjector);
 
-        AnalysisService analysisService = injector.getInstance(AnalysisService.class);
-
-        TokenFilterFactory filterFactory = analysisService.tokenFilter("hunspell");
-        MatcherAssert.assertThat(filterFactory, instanceOf(HunspellStemFilterFactory.class));
+        AnalysisService analysisService = injector.getInstance(AnalysisService.class);        
+        return analysisService;
     }
+    
 }
